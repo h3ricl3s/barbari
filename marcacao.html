@@ -9,88 +9,111 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <!--NAV-->
-    <div class="0 border border border-start-0 rounded-end">
-        <h1 class="text-center">Marcação</h1>
-    </div>
+<body class="bg-light">
 
-    </div>
-    <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">
-            <p class="fs-3">Nome
-                <i class="bi bi-person"></i>
-            </p>
-        </label>
-        <div class="col-sm-10">
-            <input class="form-control form-control-lg" type="text" aria-label=".form-control-lg example">
+    <div class="container mt-4">
+
+        <!-- TÍTULO -->
+        <div class="border border-start-0 rounded-end p-3 mb-4 bg-white">
+            <h1 class="text-center">Marcação</h1>
         </div>
-    </div>
-    </div>
-    <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">
-            <p class="fs-3">Email
-                <i class="bi bi-person-circle"></i>
-            </p>
-        </label>
-        <div class="col-sm-10">
-            <input class="form-control form-control-lg" type="text" aria-label=".form-control-lg example">
-        </div>
-    </div>
-    <div>
-        <div class="mb-3 row">
-            <label for="inputTime" class="col-sm-2 col-form-label">
-                <p class="fs-3">Tempo
-                    <i class="bi bi-calendar-week"></i>
-                </p>
-            </label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>---SELECIONE---</option>
-                <option value="1">Tarde</option>
-                <option value="2">Cedo</option>
-            </select>
-            <div class="mb-3 row">
-                <label for="inputPerson" class="col-sm-2 col-form-label">
-                    <p class="fs-3">Barbeiro</p>
+
+        <!-- FORMULÁRIO -->
+        <form>
+
+            <!-- NOME -->
+            <div class="mb-3 row align-items-center">
+                <label class="col-sm-2 col-form-label fs-4">
+                    Nome <i class="bi bi-person"></i>
                 </label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>---SELECIONE---</option>
-                    <option value="1">ROMEU</option>
-                    <option value="2">GABI</option>
-                    <option value="3">DJALAI</option>
-                </select>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-lg" placeholder="Digite seu nome" required>
+                </div>
             </div>
 
-            <section>
-                <div class="card-group">
-                    <div class="card">
-                        <img src="img/b1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">ROMEU
-
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/b4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">GABI
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <img src="img/b5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">DJULAI
-                        </div>
-                    </div>
+            <!-- EMAIL -->
+            <div class="mb-3 row align-items-center">
+                <label class="col-sm-2 col-form-label fs-4">
+                    Email <i class="bi bi-envelope"></i>
+                </label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control form-control-lg" placeholder="Digite seu email" required>
                 </div>
-            </section><br>
-            <h2 class="text-center"> <i class="bi bi-radioactive"></i> Informamos que no caso de não conparecer a re marcação sera cobrado .</h2>
-            <!--link-->
-            <link rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
+            </div>
+
+            <!-- TEMPO -->
+            <div class="mb-3 row align-items-center">
+                <label class="col-sm-2 col-form-label fs-4">
+                    Tempo <i class="bi bi-calendar-week"></i>
+                </label>
+                <div class="col-sm-10">
+                    <select class="form-select form-select-lg" required>
+                        <option value="">--- SELECIONE ---</option>
+                        <option>Tarde</option>
+                        <option>Cedo</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- BARBEIRO -->
+            <div class="mb-4 row align-items-center">
+                <label class="col-sm-2 col-form-label fs-4">
+                    Barbeiro <i class="bi bi-scissors"></i>
+                </label>
+                <div class="col-sm-10">
+                    <select class="form-select form-select-lg" required>
+                        <option value="">--- SELECIONE ---</option>
+                        <option>ROMEU</option>
+                        <option>GABI</option>
+                        <option>DJULAI</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- BOTÕES -->
+            <div class="d-flex justify-content-end gap-2 mb-4">
+                <button type="reset" class="btn btn-outline-danger btn-lg">
+                    <i class="bi bi-eraser"></i> Limpar
+                </button>
+                <button type="submit" class="btn btn-success btn-lg">
+                    <i class="bi bi-send"></i> Enviar
+                </button>
+            </div>
+
+        </form>
+
+        <!-- CARDS -->
+        <section class="mb-4">
+            <div class="card-group gap-3">
+                <div class="card">
+                    <img src="img/b1.jpg" class="card-img-top" alt="Romeu">
+                    <div class="card-body text-center fw-bold">ROMEU</div>
+                </div>
+
+                <div class="card">
+                    <img src="img/b4.jpg" class="card-img-top" alt="Gabi">
+                    <div class="card-body text-center fw-bold">GABI</div>
+                </div>
+
+                <div class="card">
+                    <img src="img/b5.jpg" class="card-img-top" alt="Djalai">
+                    <div class="card-body text-center fw-bold">DJULAI</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AVISO -->
+        <div class="alert alert-warning text-center fs-5">
+            <i class="bi bi-exclamation-triangle"></i>
+            Informamos que, no caso de não comparecer, a remarcação será cobrada.
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 
 </html>
